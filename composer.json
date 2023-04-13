@@ -1,0 +1,51 @@
+{
+    "name": "blessingk/searchy",
+    "description": "Laravel Searchy makes user driven searching easy with fuzzy search, basic string matching, Levenshtein Distance and more.",
+    "keywords": ["laravel","search","fuzzy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Blessing Kabungaidze",
+            "email": "kblessingtatenda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5.9 || ^7.0 || ^8.1",
+        "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^10.0"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.4 || ^4.0 || ^5.0",
+        "phpunit/phpunit": "^4.8 || ^5.7 || ^6.3 || ^7.0 || ^8.5 || ^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlessingK\\Searchy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BlessingK\\Tests\\Searchy\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "BlessingK\\Searchy\\SearchyServiceProvider"
+            ],
+            "aliases": {
+                "Searchy": "BlessingK\\Searchy\\Facades\\Searchy"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
