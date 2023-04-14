@@ -1,5 +1,5 @@
 {
-    "name": "blessingk/searchy",
+    "name": "blessingk/lara-searchy",
     "description": "Laravel Searchy makes user driven searching easy with fuzzy search, basic string matching, Levenshtein Distance and more.",
     "keywords": ["laravel","search","fuzzy"],
     "license": "MIT",
