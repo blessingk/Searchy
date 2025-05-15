@@ -2,3 +2,5 @@ composer.lock
 phpunit.xml
 vendor
 /.idea
+.DS_store
+*._
